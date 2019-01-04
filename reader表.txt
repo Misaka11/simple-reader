@@ -1,0 +1,18 @@
+user_info{
+	email: char
+	password:char
+	competence:int
+	notes: TEXT
+	favorite: TEXT
+}
+
+
+create table user_info(
+id int not null auto_increment,
+email varchar(40) not null,
+passWord varchar(40) not null,
+competence int(1) not null,
+notes mediumtext,
+favorite mediumtext,
+primary key (id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
